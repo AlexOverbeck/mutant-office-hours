@@ -9,9 +9,10 @@
 
   function AuthController($state, authService) {
     var vm = this;
-
+    vm.firstCome = true;
     vm.register = register;
     vm.login = login;
+    vm.changeFirstCome = changeFirstCome;
     vm.error = null;
 
     function register(user) {
@@ -35,6 +36,10 @@
         .catch(function(error) {
           vm.error = error;
         });
+    }
+
+    function changeFirstCome(bool) {
+      vm.firstCome = bool;
     }
 
   }

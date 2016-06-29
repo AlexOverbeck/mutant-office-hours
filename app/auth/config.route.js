@@ -20,5 +20,11 @@
       controller: 'AuthController',
       controllerAs: 'vm'
     });
+    $stateProvider.state('auth', {
+      url: '/auth',
+      templateUrl: 'app/auth/auth.html',
+      controller: 'AuthController',
+      controllerAs: 'vm'
+    });
   }
 })();

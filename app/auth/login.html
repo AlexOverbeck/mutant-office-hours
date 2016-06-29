@@ -1,3 +1,13 @@
+<button type='button' class='button' ng-click="vm.toggleFirstCome()">toggle</button>
+<div ng-show="vm.firstCome">
+  <h1>first time</h1>
+</div>
+
+<div ng-hide="vm.firstCome">
+  <h1>not first time</h1>
+</div>
+
+
 <xt-auth-form
   form-name="Log in"
   submit-function="vm.login(user)"

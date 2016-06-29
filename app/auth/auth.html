@@ -1,0 +1,18 @@
+<button type='button' class='button' ng-click="vm.changeFirstCome(true)">Login</button>
+<button type='button' class='button' ng-click="vm.changeFirstCome(false)">Sign Up</button>
+
+<div ng-show="vm.firstCome" class='row'>
+  <xt-auth-form
+    form-name="Log in"
+    submit-function="vm.login(user)"
+    error="vm.error"
+  ></xt-auth-form>
+</div>
+
+<div ng-hide="vm.firstCome" class='row'>
+  <xt-auth-form
+    form-name="Register"
+    submit-function="vm.register(user)"
+    error="vm.error">
+  </xt-auth-form>
+</div>
